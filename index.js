@@ -42,13 +42,19 @@ const addNewTask=()=>{
             console.log(tasks[i].innerText);
         }
     }
-
-
       /* EXERCISE 9:
                Create a method "changeTaskBackgroundColor" which takes the color from the color picker with an 
                onchange event listener ad applies it as background to every list item
             */
+        const changeTaskBackgroundColor=()=>{
+            let colorPicker = document.querySelector('#colorPicker');
+            let tasks= document.querySelectorAll('li');
+            for(let i=0; i<tasks.length; i++){
+                (tasks[i].style.backgroundColor= colorPicker.value);
+            }
 
+        }
+        colorPicker.addEventListener("onchange", functionButtonPressed)
       /* EXTRA */
 
       /* EXERCISE 10: 
@@ -59,3 +65,16 @@ const addNewTask=()=>{
                - Break the code into many function for semplicity 
                - Reuse the functions previously created
             */
+    function bubblesort(){
+        let tasks= document.querySelectorAll('li');
+        let myArray =[]
+        for(let i=0; i<tasks.length; i++){
+             myArray.push(tasks[i].innerText);
+        }
+          myArray.sort();
+
+          for(let i=0; i<tasks.length; i++){
+            tasks[i].innerText= myArray[i];
+       }
+        
+    }
