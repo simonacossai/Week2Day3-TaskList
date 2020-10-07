@@ -15,12 +15,23 @@
  h1{
      margin: 20px auto;
  }
+ span{
+     font-size: 40px;
+ }
+ #add{
+     border-radius: 50%;
+     background-color: #7B8CDE;
+     color:#fff;
+ }
+ #add:hover{
+     background-color: #6b7dda;
+ }
  .taskList{
      background-color: #fff;
      padding: 20px;
-     margin: 350px;
+     margin: 380px;
      margin-top: 0!important;
-     border-bottom: 4px solid salmon;
+     border-right: 7px solid #7B8CDE;
      border-radius: 3px;
      box-shadow:
      0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -38,30 +49,48 @@
         text-align: center;
         justify-content: center;
         align-items: center;
-        width: 200px;
+        margin: 0 auto;
+        padding: 0;
     }
+   .inputDiv{
+       display: flex;
+       flex-direction: row;
+       align-items: center;
+       text-align: center;
+       justify-content: center;
+   }
+   .color{
+       margin-top:30px;
+   }
 input[type="button"]{
-    height: 40px;
-    border: 2px solid salmon;
-    color: salmon;
+    height: 35px;
+    border: 2px solid #7B8CDE;
+    color: #7B8CDE;
     background-color: transparent;
     transition: all ease .7s;
+    margin: 5px;
 }
 input[type="button"]:hover{
-    height: 40px;
-    border: 2px solid salmon;
+    height: 35px;
+    border: 2px solid #7B8CDE;
     color: #fff;
-    background-color: salmon;
+    background-color: #7B8CDE;
     transition: all ease .7s;
 }
 
 @media(max-width: 768px){
+    h1{
+        font-size: 40px;
+    }
+    span{
+        font-size: 30px;
+    }
     .taskList{
         background-color: #fff;
         padding: 10px;
         margin: 0px;
         margin-top: 0!important;
-        border-bottom: 4px solid salmon;
+        border-bottom: 4px solid #7B8CDE;
         border-radius: 3px;
         box-shadow:
         0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -75,18 +104,34 @@ input[type="button"]:hover{
        }
    input[type="button"]{
        height: 40px;
-       border: 2px solid salmon;
-       color: salmon;
+       border: 2px solid #7B8CDE;
+       color: #7B8CDE;
        background-color: transparent;
        transition: all ease .7s;
    }
-   input[type="button"]:hover{
-       height: 40px;
-       border: 2px solid salmon;
-       color: #fff;
-       background-color: salmon;
-       transition: all ease .7s;
-   }
+   input[type="button"]{
+    height: 35px;
+    border: 2px solid #7B8CDE;
+    color: #7B8CDE;
+    background-color: transparent;
+    transition: all ease .7s;
+    margin: 5px;
+}
+
+input[type="button"]:hover{
+    height: 35px;
+    border: 2px solid #7B8CDE;
+    color: #fff;
+    background-color: #7B8CDE;
+    transition: all ease .7s;
+}
+.inputDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
 }
 
 

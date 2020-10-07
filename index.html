@@ -30,25 +30,23 @@ The have a list of tasks and can, at any time, add a new one, delete one or sort
   <span>Add a new task!</span
 ><br /><br />
     <input type="text" id="newTask" />
-    <input type="button" value="Add new Task" onclick="addNewTask()" />
+    <input type="button" value=" + " onclick="addNewTask()" id="add"/>
     <ul id="myTaskList">
 
     </ul>
-
-    <hr />
-
+    <div class="color">
     <input type="color" placeholder="Color" id="colorPicker" />
     <input
       type="button"
       value="Change task background"
-      onclick="changeTaskBackgroundColor()"
-    />
-
-    <hr />
-
+      onclick="changeTaskBackgroundColor()"/>
+    </div>
+   <div class="inputDiv">
+   
     <input type="button" value="Sort" onclick="bubblesort()" />
     <input type="button" value="Remove First Task" onclick="removeFirst()"/>
     <input type="button" value="Remove Last Task" onclick="removeLast()"/>
+  </div>
   </div>
     <!-- EXERCISE 3
         Create a button "Remove Last Task" to trigger the method "removeLast"
