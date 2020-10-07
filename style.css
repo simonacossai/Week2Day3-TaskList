@@ -12,6 +12,9 @@
     justify-content: center;
     text-align: center;
  }
+ h1{
+     margin: 20px auto;
+ }
  .taskList{
      background-color: #fff;
      padding: 20px;
@@ -28,6 +31,14 @@
      0 10px 10px rgba(0, 0, 0, 0.12);
      font-weight: bold;
      font-size: 20px;
+    }
+    #myTaskList{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
     }
 input[type="button"]{
     height: 40px;
